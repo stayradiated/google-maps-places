@@ -68,8 +68,8 @@ void (async function () {
   }
 
   const browser = await puppeteer.launch({
-    executablePath: '/usr/bin/google-chrome',
-    args: ['--lang=en-US,en'],
+    executablePath: '/usr/bin/chromium-browser',
+    args: ['--no-sandbox', '--lang=en-US,en'],
   })
 
   const page = await browser.newPage()
